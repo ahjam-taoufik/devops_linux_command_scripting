@@ -15,3 +15,8 @@ echo "$VAR_USER"
 VAR_HOSTNAME="$HOSTNAME"
 echo "$VAR_HOSTNAME"
 
+#for loop file in directory
+for i in ./*.txt; do 
+  echo "$i"
+done
+
