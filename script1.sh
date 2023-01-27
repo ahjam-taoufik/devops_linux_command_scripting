@@ -88,6 +88,13 @@ time {
     done
 }
 
+# read text from file and print it to screen
+file='file.txt'
+n=1
+while read line; do
+  echo "Line-$n : $line"
+  n=$((n+1))
+done < $file
 
 
 
