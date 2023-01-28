@@ -97,5 +97,17 @@ while read line; do
 done < $file
 
 
+# read text from file using if condition
+file='file.txt'
+n=1
+while read line; do
+  echo "Line-$n : $line"
+  n=$((n+1))
+  if ((n>2)); then
+     break;
+  fi
+done < $file
+
+
 
 
