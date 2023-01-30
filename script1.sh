@@ -108,6 +108,10 @@ while read line; do
   fi
 done < $file
 
+#basic read command
+ echo "Please enter 3 words followed by ENTER: "
+ read first middle final
+ echo "Hello $first $middle $final"
 
 
 
