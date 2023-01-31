@@ -122,4 +122,10 @@ for i in ${arrayVar[@]}; do
   echo "$i"
 done
 
+#read command with delimiter
+echo "Enter car name and its model:"
+IFS='|' read car model <<< 'BMW | i8'
+echo "Hello, car is $car and model is $model"
+
+
 
