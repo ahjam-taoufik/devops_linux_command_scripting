@@ -112,6 +112,14 @@ done < $file
  echo "Please enter 3 words followed by ENTER: "
  read first middle final
  echo "Hello $first $middle $final"
+ 
+ #read command into array
+echo "Give input to enter into array"
+read -a arrayVar
 
+echo "The given input array member are as follows: "
+for i in ${arrayVar[@]}; do
+  echo "$i"
+done
 
 
