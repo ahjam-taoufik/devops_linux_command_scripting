@@ -132,3 +132,26 @@ date
 read -t 4 -p "Press Enter Key or Wait for 4 seconds"
 date 
 
+
+#menu option with select command
+PS3= 'Please choose a car company'
+
+cars=("bmw" "toyota" "honda" "quit")
+select car in "${cars[@]}"
+do 
+  case $car in
+     "bmw")
+        echo "You chose bmw"
+        ;;
+      "toyota"
+        echo "You chose toyota"
+        ;;
+      "honda"
+        echo "You chose honda"
+        ;;
+      "Quit"
+         break
+        ;;
+      *) echo "invalid option $REPLY";;
+       esac
+done
