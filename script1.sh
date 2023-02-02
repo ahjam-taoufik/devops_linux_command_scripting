@@ -127,5 +127,8 @@ echo "Enter car name and its model:"
 IFS='|' read car model <<< 'BMW | i8'
 echo "Hello, car is $car and model is $model"
 
-
+#read command with timeout
+date
+read -t 4 -p "Press Enter Key or Wait for 4 seconds"
+date 
 
