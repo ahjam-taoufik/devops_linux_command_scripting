@@ -155,3 +155,29 @@ do
       *) echo "invalid option $REPLY";;
        esac
 done
+
+# menu option with select command from array variable
+PS3='Select any of the car company: '
+
+menu_from_array ()
+
+{
+
+  select item; do
+
+  if [ 1 -le "$REPLY" ] && [ "$REPLY" -le $# ]; then
+
+     echo "The selected car company is $item"
+
+     break;
+
+  else
+
+     echo "Wrong selection: Select any number from 1-$#"
+
+  fi
+
+  done
+}
+cars=('bmw' 'toyota' 'honda')
+menu_from_array "${cars[@]}"
