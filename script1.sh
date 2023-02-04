@@ -181,3 +181,11 @@ menu_from_array ()
 }
 cars=('bmw' 'toyota' 'honda')
 menu_from_array "${cars[@]}"
+
+
+#split string by space
+
+line="this is the example line"
+for word in $line; do
+  echo "$word"
+done
