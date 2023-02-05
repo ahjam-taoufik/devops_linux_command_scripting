@@ -189,3 +189,15 @@ line="this is the example line"
 for word in $line; do
   echo "$word"
 done
+
+
+#split string by custom delimiter
+
+line="thisis!a!line!which!would!have!spaces"
+delimiter=!
+s=$line$delimiter
+array=();
+while [[ $s ]]; do
+  echo "${s%%"$delimiter"*}"
+  s=${s#*"$delimiter"}
+done;
