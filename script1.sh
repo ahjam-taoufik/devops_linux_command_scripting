@@ -201,3 +201,12 @@ while [[ $s ]]; do
   echo "${s%%"$delimiter"*}"
   s=${s#*"$delimiter"}
 done;
+
+#split string into array variable
+ line="this,is,a,line,which,would,have,spaces"
+ IFS=','
+ read -ra ADDR <<< "$line"
+ for i in "${ADDR[@]}"; do
+   echo "$i"
+ done
+ IFS=' '
