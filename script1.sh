@@ -210,3 +210,14 @@ done;
    echo "$i"
  done
  IFS=' '
+ 
+ 
+#read password from stdin without printing it
+echo -n "Type a Password: "
+read -s password
+echo " "
+echo "Thanks for putting in your password which is : $password"
+
+ 
+ 
+ 
