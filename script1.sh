@@ -218,6 +218,11 @@ read -s password
 echo " "
 echo "Thanks for putting in your password which is : $password"
 
+#command with pipe
+cat file1.txt | sort
+cat file1.txt | wc -w  #count of line  
+
+
  
  
  
