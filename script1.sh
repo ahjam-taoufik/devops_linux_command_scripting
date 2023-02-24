@@ -222,6 +222,10 @@ echo "Thanks for putting in your password which is : $password"
 cat file1.txt | sort
 cat file1.txt | wc -w  #count of line  
 
+#read every line from file and copy to another file with pipe
+cat car.txt | while read x ; do
+echo $x ; done | cat > new.txt 
+
 
  
  
