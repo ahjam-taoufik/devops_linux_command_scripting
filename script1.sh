@@ -226,6 +226,14 @@ cat file1.txt | wc -w  #count of line
 cat car.txt | while read x ; do
 echo $x ; done | cat > new.txt 
 
+#simple function
+function func()
+{
+ echo "hello, this is a text ."
+}
+
+func
+func
 
  
  
