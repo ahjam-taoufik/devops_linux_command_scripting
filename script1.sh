@@ -235,6 +235,19 @@ function func()
 func
 func
 
+
+#function return a string
+function func()
+{
+  retstr='hello, this is a text '
+}
+retstr='bash is excellent'
+echo $retstr
+
+func
+echo $retstr
+
+
  
  
  
