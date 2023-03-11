@@ -256,6 +256,15 @@ function func()
 func 5 4
 
 
+#indexed arrays with declare
+
+declare -a my_array
+my_array=(linux ubuntu debian)
+echo ${my_array[0]}
+echo ${my_array[@]}
+
+
+
  
  
  
