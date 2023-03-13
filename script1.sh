@@ -264,6 +264,13 @@ echo ${my_array[0]}
 echo ${my_array[@]}
 
 
+#associative arrays with declare
+declare -A assoc_Array
+assoc_Array=([website]=Youtube [channel]=Debian)
+
+echo ${assoc_Array[website]}
+echo ${assoc_Array[channel]}
+
 
  
  
