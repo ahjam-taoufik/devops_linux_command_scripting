@@ -272,6 +272,11 @@ echo ${assoc_Array[website]}
 echo ${assoc_Array[channel]}
 
 
+# xargs
+ls *file* | xargs wc
+
+
+
  
  
  
