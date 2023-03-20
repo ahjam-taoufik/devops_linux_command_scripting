@@ -276,6 +276,8 @@ echo ${assoc_Array[channel]}
 ls *file* | xargs wc
 
 
+#reference home directory with tilde
+echo ~
 
  
  
