@@ -279,6 +279,11 @@ ls *file* | xargs wc
 #reference home directory with tilde
 echo ~
 
+
+#substring expansion for printing part of string
+var="this is the part of para"
+echo $var
+echo "${var:0:6}"
  
  
  
