@@ -285,5 +285,16 @@ var="this is the part of para"
 echo $var
 echo "${var:0:6}"
  
+# check if file executable, set if not
+file="file1"
+
+if[[ -x "$file" ]]; then
+  echo "File is executable"
+else
+  echo "File is not executable"
+  chmod +x $file
+  echo "File is executable now"
+fi
+
  
  
