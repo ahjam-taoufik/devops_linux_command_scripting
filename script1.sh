@@ -296,5 +296,15 @@ else
   echo "File is executable now"
 fi
 
+# check if file is owned by user, set if not
+file="file1.txt"
+if [[ -O "$file" ]]; then
+  echo "File is owned by the currently login user"
+  sudo chown timitar $file
+else
+  echo "File is not owned by the currently login user"
+  sudo chown timitar $file
+  echo "File is owned by the . . ."
+fi
  
  
