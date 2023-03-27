@@ -307,4 +307,8 @@ else
   echo "File is owned by the . . ."
 fi
  
+ # wc to count lines in a file
+  echo "The number of lines in the file are : "
+  wc -l file1.txt
+
  
