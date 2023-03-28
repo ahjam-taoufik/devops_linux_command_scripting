@@ -310,5 +310,9 @@ fi
  # wc to count lines in a file
   echo "The number of lines in the file are : "
   wc -l file1.txt
+  
+  # wc to count lines in a file
+  echo "The number of caracters in the file are : "
+  wc -c file1.txt
 
  
