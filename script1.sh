@@ -315,4 +315,6 @@ fi
   echo "The number of caracters in the file are : "
   wc -c file1.txt
 
- 
+ #head command with default args
+  file="file.txt"
+  sudo head $file
