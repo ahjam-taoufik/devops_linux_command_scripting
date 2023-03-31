@@ -318,3 +318,8 @@ fi
  #head command with default args
   file="file.txt"
   sudo head $file
+  
+  
+  #head command to print first 2 lines
+  file="file.txt"
+  sudo head -n 2 $file
