@@ -323,3 +323,7 @@ fi
   #head command to print first 2 lines
   file="file.txt"
   sudo head -n 2 $file
+  
+  #tail command with default args
+  file="file.txt"
+  sudo tail $file
