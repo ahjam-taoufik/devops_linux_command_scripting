@@ -327,3 +327,8 @@ fi
   #tail command with default args
   file="file.txt"
   sudo tail $file
+  
+  #tail command to print last 2 lines
+  file="file.txt"
+  sudo tail -n 2 $file
+
