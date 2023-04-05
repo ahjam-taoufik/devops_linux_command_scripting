@@ -331,4 +331,12 @@ fi
   #tail command to print last 2 lines
   file="file.txt"
   sudo tail -n 2 $file
+  
+  
+# find command to locate matching pattern files
+ find . -name file.txt -print
+ find . -name fil*.txt -print #another example
+ find . -name *fil.txt -print #another example
+ find . -name *fil*.txt -print #another example
+
 
