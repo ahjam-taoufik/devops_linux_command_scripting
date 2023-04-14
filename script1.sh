@@ -339,4 +339,7 @@ fi
  find . -name *fil.txt -print #another example
  find . -name *fil*.txt -print #another example
 
+# find file based Date
+  find . -name file1.txt -type f -ls |grep 'Jan 30'
+
 
