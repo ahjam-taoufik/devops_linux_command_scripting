@@ -343,4 +343,5 @@ fi
 # find file based Date
   find . -name file1.txt -type f -ls |grep 'Jan 30'
 
-
+#grep command to search for text in file in a directory recursive
+  grep -rl this*
