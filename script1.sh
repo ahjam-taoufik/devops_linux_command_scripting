@@ -345,3 +345,8 @@ fi
 
 #grep command to search for text in file in a directory recursive
   grep -rl this*
+  
+#sed to replace matching text
+  sed 's/this/these/' file1.txt    #replace "this" with these
+  sed 's/this/these/2' file1.txt    #replace "this" with these but the second "this" in the line
+
