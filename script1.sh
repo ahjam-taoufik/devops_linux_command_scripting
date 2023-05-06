@@ -356,4 +356,6 @@ fi
   sed 's/this/these/' file1.txt    #replace "this" with these
   sed 's/this/these/2' file1.txt    #replace "this" with these but the second "this" in the line
 
+#sed to delete specific lines
+ sed '2d' file1.txt  #delete the second line
 
