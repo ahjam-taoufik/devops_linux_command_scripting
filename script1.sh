@@ -358,4 +358,9 @@ fi
 
 #sed to delete specific lines
  sed '2d' file1.txt  #delete the second line
+ 
+#sed add line before and after line specific
+  sed '/^Writing*./i something' file.txt #add 'something' before "writing"
+  sed '/^Writing*./a something' file.txt #add 'something' after "writing"
+
 
