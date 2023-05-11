@@ -362,5 +362,14 @@ fi
 #sed add line before and after line specific
   sed '/^Writing*./i something' file.txt #add 'something' before "writing"
   sed '/^Writing*./a something' file.txt #add 'something' after "writing"
+# sort and count data into a file 
+echo "Enter filename"
+read filename
+if [[-f "$filename" ]]
+    then
+        sort $filename | uniq -c | sort -bgr
+else
+        echo "$filename" does not exists."
+fi
 
 
